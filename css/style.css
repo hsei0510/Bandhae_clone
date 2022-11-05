@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+* { margin: 0; padding: 0; }
+html,body { height: 100%; }
+body { min-width: 380px; background: #222; }
+ul,ol { list-style: none; }
+a { color: inherit; text-decoration: none; }
+body, input, select, textarea, button, h1, h2, h3, h4, h5, h6, a {
+  color: #111;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'NanumSquareNeo','NanumSquare','나눔스퀘어',AppleSDGothicNeo-Regular,"Helvetica Neue", Helvetica, Arial, sans-serif }
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------*/
+body {
+  background-image: url('../img/main/bg_spot.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+#header {
+  margin: 20px 30px;
+  position: fixed;
+  z-index: 1000;
+  top:0;
+  right:0;
+  left: 0;
+}
+
+#header #logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header #logo-box #logo {
+  background-image: url('../img/logo/logo.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+
+#header #logo-box a {
+  display: inline-block;
+  float: left;
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+#header #logo-box a.button {
+  margin-left: auto;
+  margin-right: 22px;
+    padding: 0px 6px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: -0.3px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    transition: all .25s linear;
+}
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+section#screen1 .video-wrap p {
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section#screen1 .video-wrap h2 {
+  margin-bottom: 40px;
+  font-size: 98.6px;
+  font-weight: 900;
+  line-height: 104px;
+  letter-spacing: -4px;
+  color: #fff;
+  text-align: center;
+}
+
+section#screen1 .video-wrap a.button {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: 22px;
+  padding: 13px 35px;
+  font-size: 18px;
+  font-weight: 800;
+  /* line-height: 32px; */
+  letter-spacing: -0.3px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 32px;
+  transition: all .25s linear;
+
+}
+
+section#screen1 .video-wrap a.button:after {
+  content: '';
+  background-image: url('../img/logo/1.png');
+  background-size: 100%;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-left: 6px;
+  /* margin-top: 13px; */
+  /* background-color: red; */
+}
+
+section#screen1 .video-wrap a.button:nth-of-type(2) {
+  margin-right: 0px;
+  color:#0c101d;
+  background-color: #58ff70;
+  border: 3px solid #58ff70;
+}
+
+section#screen1 .video-wrap a.button:nth-of-type(2):after {
+  content: '';
+  background-image: url('../img/logo/2.png');
+}
+
+section#screen1 .video-wrap .button-box a.page-down {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  padding: 15px 0px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 1);
+  /* min-width: 380px; */
+  z-index: 10;
+}
+
+nav ul {
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 30px;
+  padding: 0px 16px 0px 0px;
+}
+
+nav ul li a {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 7px 16px;
+    transition: all .25s linear;
+}
+
+nav ul li:hover a {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 24px;
+}
+
+nav ul li:nth-child(1) a {
+  background-color: #000;
+  color: #fff;
+  border-radius: 24px;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------*/
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------*/
+.fixed {
+  position: fixed;
+  top: 0;
+}
+/*-----------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------*/
+#screen1 {
+  /* background-color: #ffc8dd; */
+}
+#screen2 {
+  background-color: #fff;
+}
+#screen3 {
+  background-color: #cdb4db;
+}
+#screen4 {
+  background-color: #bde0fe;
+}
+#screen5 {
+  background-color: #a2d2ff;
+}
+#screen6 {
+  background-color: #f1f1f1;
+}
+#screen7 {
+  background-color: #f9f9f9;
+}
+/*-----------------------------------------------------------------------------*/
