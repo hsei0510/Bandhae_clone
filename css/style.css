@@ -2,7 +2,7 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 * { margin: 0; padding: 0; }
 html,body { height: 100%; }
-body { min-width: 380px; background: #222; }
+body { min-width: 380px; background: #fff; }
 ul,ol { list-style: none; }
 a { color: inherit; text-decoration: none; }
 body, input, select, textarea, button, h1, h2, h3, h4, h5, h6, a {
@@ -13,14 +13,9 @@ body, input, select, textarea, button, h1, h2, h3, h4, h5, h6, a {
 
 
 
-
-
-
 /*-----------------------------------------------------------------------------*/
 body {
-  background-image: url('../img/main/bg_spot.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
+
 }
 
 #header {
@@ -75,8 +70,30 @@ body {
 }
 /*-----------------------------------------------------------------------------*/
 
+/*-----------------------------------------------------------------------------*/
+section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  max-width: 1440px;
+  padding: 0 80px;
+  margin: 0 auto;
+}
+/*-----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------*/
+section#screen1 {
+  background-image: url('../img/main/bg_spot.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
 section#screen1 .video-wrap p {
   margin-bottom: 8px;
   font-size: 22px;
@@ -142,12 +159,15 @@ section#screen1 .video-wrap .button-box a.page-down {
   position: absolute;
   left: 50%;
   bottom: 30px;
-
 }
-
-
 /*-----------------------------------------------------------------------------*/
 
+/*-----------------------------------------------------------------------------*/
+.fixed {
+  position: fixed;
+  top: 0;
+}
+/*-----------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------*/
 nav {
@@ -195,25 +215,190 @@ nav ul li:nth-child(1) a {
 /*-----------------------------------------------------------------------------*/
 
 
-
-/*-----------------------------------------------------------------------------*/
-section {
+section#screen2 {
+  display: block;
   position: relative;
+  width: 100%;
+  height: auto;
+}
+
+section#screen2 .main-title {
+  text-align: center;
+  /* height: 642px; */
+  padding-top: 83px;
+  margin-top: 60px;
+}
+
+section#screen2 .main-title p {
+
+  margin-bottom: 35px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+section#screen2 .main-title h2 {
+  margin-bottom: 16px;
+  font-size: 82px;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: -2px;
+}
+
+section#screen2 .main-title h2 span {
+  color: #0dcb67;
+}
+
+section#screen2 .main-title > span {
+  display: block;
+  margin-bottom: 231px;
+  font-size: 20px;
+  font-weight: 700px;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+section#screen2 .main-title .data-text {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 54px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  color: #999;
+  text-align: left;
+}
+
+section#screen2 .main-title.second {
+  background-color: #0dcb67;
+  width: 100%;
   height: 100vh;
+}
+section#screen2 .main-title.second h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 86px;
+  letter-spacing: -1.5;
+  color: #fff;
+  margin-bottom: 80px;
+}
+section#screen2 .main-title.second h2 span {
+  color: #fff;
+}
+section#screen2 .main-title.second img {
+  margin: 0 auto 50px;
+}
+section#screen2 .main-title.second p {
+  font-size: 18px;
+  color: #fff;
+}
+
+section#screen2 .main-title.third h2 {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 86px;
+  letter-spacing: -1.5;
+  margin-bottom: 80px;
+}
+section#screen2 .main-title.third.box-text {
+  position: relative;
+}
+section#screen2 .main-title.third .box-text ul {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  margin-bottom: 40px;
 }
-/*-----------------------------------------------------------------------------*/
-
-
-
-/*-----------------------------------------------------------------------------*/
-.fixed {
-  position: fixed;
-  top: 0;
+section#screen2 .main-title.third .box-text ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-basis: 33.333% ;
+  height: 406px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  margin: 0px 15px;
+  padding: 50px 0px 0px 0px;
 }
-/*-----------------------------------------------------------------------------*/
+section#screen2 .main-title.third .box-text ul li .box-inner-text strong {
+  flex-basis: 33.333%;
+  padding: 30px;
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 90px;
+  letter-spacing: -1px;
+  color: #111;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img {
+  position: absolute;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.girl {
+  width: 140px;
+  height: 140px;
+  top:-60px;
+  right: 10px;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.img_tag01 {
+  width: 130px;
+  height: 58px;
+  top: 185px;
+  left: 155px;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.img_tag02 {
+  width: 128px;
+  height: 50px;
+  bottom: 60px;
+  right: 122px;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.img_tag03 {
+  width: 186px;
+  height: 56px;
+  top: 60px;
+  left: 160px;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.img_tag04 {
+  width: 258px;
+  height: 56px;
+  top: 230px;
+  left: 100px;
+}
+section#screen2 .main-title.third .box-text ul li .box-inner-text img.boy {
+  width: 140px;
+  height: 140px;
+  bottom: -60px;
+  right: 10px;
+}
+
+section#screen2 .main-title.forth .scroll-text ul.scroll-list {
+  overflow: hidden;
+}
+
+section#screen2 .main-title.forth .scroll-text ul.scroll-list li {
+  position: relative;
+  padding: 72px 200px 72px 0px;
+  background-color: red;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  float: left;
+}
+
+section#screen2 .main-title.forth .scroll-text .scroll-list li span {
+  float: left;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -1.9px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+
+
+
+
 
 
 
