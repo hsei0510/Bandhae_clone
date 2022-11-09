@@ -430,6 +430,10 @@ section#screen2 .main-title.forth .scroll-text ul.scroll-list li {
   justify-content: center;
 }
 
+section#screen2 .main-title.forth .scroll-text ul.scroll-list li:nth-child(2) {
+  border-top: 0px
+}
+
 section#screen2 .main-title.forth .scroll-text .scroll-list li span {
   font-size: 64px;
   font-weight: 700;
