@@ -88,22 +88,62 @@ section {
 
 /*-----------------------------------------------------------------------------*/
 section#screen1 {
-  background-image: url('../img/main/bg_spot.jpg');
+  /* background-image: url('../img/main/bg_spot.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  margin: 0 auto;
+  margin: 0 auto; */
+  position: relative;
 }
 
-section#screen1 .video-wrap p {
+section#screen1 > article {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+section#screen1 article .video_wrap {
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+  padding: 0; */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section#screen1 article .video_wrap .video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+section#screen1 article .video_wrap > .article-box {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+section#screen1 .video_wrap > .article-box p {
   margin-bottom: 8px;
   font-size: 22px;
   font-weight: 900;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   text-align: center;
 }
 
-section#screen1 .video-wrap h2 {
+section#screen1 .video_wrap > .article-box h2 {
   margin-bottom: 40px;
   font-size: 98.6px;
   font-weight: 900;
@@ -113,7 +153,10 @@ section#screen1 .video-wrap h2 {
   text-align: center;
 }
 
-section#screen1 .video-wrap a.button {
+section#screen1 .video_wrap > .article-box .button-box {
+}
+
+section#screen1 .video_wrap > .article-box .button-box a.button {
   display: inline-block;
   margin-top: 16px;
   margin-left: auto;
@@ -127,10 +170,9 @@ section#screen1 .video-wrap a.button {
   border: 3px solid #fff;
   border-radius: 32px;
   transition: all .25s linear;
-
 }
 
-section#screen1 .video-wrap a.button:after {
+section#screen1 .video_wrap > .article-box .button-box a.button:after {
   content: '';
   background-image: url('../img/logo/1.png');
   background-size: 100%;
@@ -142,19 +184,19 @@ section#screen1 .video-wrap a.button:after {
   /* background-color: red; */
 }
 
-section#screen1 .video-wrap a.button:nth-of-type(2) {
+section#screen1 .video_wrap > .article-box .button-box a.button:nth-of-type(2) {
   margin-right: 0px;
   color:#0c101d;
   background-color: #58ff70;
   border: 3px solid #58ff70;
 }
 
-section#screen1 .video-wrap a.button:nth-of-type(2):after {
+section#screen1 .video_wrap > .article-box .button-box a.button:nth-of-type(2):after {
   content: '';
   background-image: url('../img/logo/2.png');
 }
 
-section#screen1 .video-wrap .button-box a.page-down {
+section#screen1 .video_wrap > .article-box .button-box a.page-down {
   display: block;
   position: absolute;
   left: 50%;
@@ -166,6 +208,7 @@ section#screen1 .video-wrap .button-box a.page-down {
 .fixed {
   position: fixed;
   top: 0;
+  color: #111;
 }
 /*-----------------------------------------------------------------------------*/
 
@@ -373,32 +416,66 @@ section#screen2 .main-title.third .box-text ul li .box-inner-text img.boy {
 }
 
 section#screen2 .main-title.forth .scroll-text ul.scroll-list {
+  position: relative;
   overflow: hidden;
 }
 
 section#screen2 .main-title.forth .scroll-text ul.scroll-list li {
-  position: relative;
   padding: 72px 200px 72px 0px;
-  background-color: red;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  overflow: hidden;
-  float: left;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section#screen2 .main-title.forth .scroll-text .scroll-list li span {
-  float: left;
   font-size: 64px;
   font-weight: 700;
   letter-spacing: -1.9px;
-  color: #fff;
-  white-space: nowrap;
+  color: #222;
 }
 
+section#screen2 .main-title.forth .scroll-text .scroll-list li span img {
+  /* position: absolute; */
+  margin: 0px 30px;
+}
 
+section#screen2 .main-title.fifth h2 {
+  font-size: 60px;
+}
 
+section#screen2 .main-title.fifth ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 406px;
+  margin: 0 auto;
+  padding: 6px;
+  background-color: #f4f5f6;
+  border-radius: 27px;
+}
 
+section#screen2 .main-title.fifth ul li {
+  padding: 9px 0px;
+  flex-grow: 1;
+}
 
+section#screen2 .main-title.fifth ul li:nth-child(1) {
+  background-color: #111;
+  border-radius: 32px;
+}
+
+section#screen2 .main-title.fifth ul li:nth-child(1) a {
+  color: #fff;
+}
+
+section#screen2 .main-title.fifth ul li a {
+  font-size: 18px;
+  font-weight: 800;
+  color: #999;
+}
 
 
 

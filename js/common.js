@@ -10,7 +10,7 @@ $(function(){
 
     var navBar = $('nav');
     // navBar.addClass('fixed')
-    console.log(navBar);
+    // console.log(navBar);
 
     // console.log(`window-height: ${winHeight}, scroll-top: ${scTop}`);
     if(scTop > winHeight - 30){
